@@ -1,1 +1,224 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portifolio Atividade MatheusLopesDSW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script src="index.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="js/scrollnav.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#hero">Matheus Lopes</a>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content:flex-end">
+                    <li class="navbar-brand">
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/matheuslopespro" target="_blank" rel="noopener"
+                            aria-label="Linkedin">
+                            <span class="fa fa-linkedin" style="color: ghostwhite"></span>
+                        </a>
+                    </li>
+                    <li class="navbar-brand">
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/MatheusLopesDSW" target="_blank" rel="noopener" aria-label="Twitter">
+                            <span class="fa fa-twitter" style="color: ghostwhite"></span>
+                        </a>
+                    </li>
+                    <li class="navbar-brand">
+                        <a class="btn btn-social-icon btn-github" href="https://github.com/mthslps" target="_blank" rel="noopener" aria-label="Twitter">
+                            <span class="fa fa-github" style="color: ghostwhite"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id='hero'>
+        <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+        <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+        <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+        <div class='layer-3 layer' data-depth='1.00' data-type='parallax'>
+            <!-- <div class='text-header layer' data-depth='0.01' data-type='parallax'>aaaaaaa
+            </div> -->
+        </div>
+        <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
+        <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
+    </div>
+    <div id='hero-mobile'></div>
+    <br>
+    <div id='content'>
+        <br>
+            <div id="top" class="container marketing">
+
+                    <!-- Three columns of text below the carousel -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/open-position-frontend-developer-dribbble-2-preview.png" alt="Generic placeholder image"
+                                width="140" height="140">
+                            <h2>Front-End</h2>
+                            <p>Conhecimento em JS, JQuery, HTML e CSS</p>
+                            <p>
+                                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+                            </p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
+                                width="140" height="140">
+                            <h2>Heading</h2>
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                condimentum nibh.</p>
+                            <p>
+                                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+                            </p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
+                                width="140" height="140">
+                            <h2>Heading</h2>
+                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
+                                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                                ut fermentum massa justo sit amet risus.</p>
+                            <p>
+                                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
+                            </p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+        
+        
+                    <!-- START THE FEATURETTES -->
+        
+                    <hr class="featurette-divider">
+        
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading">First featurette heading.
+                                <span class="text-muted">It'll blow your mind.</span>
+                            </h2>
+                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                                commodo.
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                        </div>
+                    </div>
+        
+                    <hr class="featurette-divider">
+        
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading">Oh yeah, it's that good.
+                                <span class="text-muted">See for yourself.</span>
+                            </h2>
+                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                                commodo.
+                            </p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                        </div>
+                    </div>
+        
+                    <hr class="featurette-divider">
+        
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading">And lastly, this one.
+                                <span class="text-muted">Checkmate.</span>
+                            </h2>
+                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                                commodo.
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                        </div>
+                    </div>
+        
+                    <hr class="featurette-divider">
+        
+                    <!-- /END THE FEATURETTES -->
+        
+                </div>
+                <!-- /.container -->
+        
+        
+                <!-- FOOTER -->
+                <footer class="container">
+                    <p class="float-right">
+                        <a href="#">Back to top</a>
+                    </p>
+                    <p>&copy; 2017-2018 Company, Inc. &middot;
+                        <a href="#">Privacy</a> &middot;
+                        <a href="#">Terms</a>
+                    </p>
+                </footer>
+            </main>
+        
+    </div>
+
+
+</body>
+
+</html>

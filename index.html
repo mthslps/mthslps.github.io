@@ -7,39 +7,28 @@
     <title>Portifolio Atividade MatheusLopesDSW</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <script src="index.js"></script>
-    <!-- Bootstrap core CSS -->
+    <script src="js/index.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- <script type="text/javascript" src="js/scrollnav.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
 
-                // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
-                    // Prevent default anchor click behavior
                     event.preventDefault();
-
-                    // Store hash
                     var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
                     }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
                     });
-                } // End if
+                }
             });
         });
     </script>
 
-    <!-- Custom styles for this template -->
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,20 +37,16 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#hero">Matheus Lopes</a>
+            <a class="navbar-brand" href="#port">Matheus Lopes</a>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
+                        <a class="nav-link" href="#content">Conhecimentos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="#quemsoueu">Link</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav justify-content:flex-end">
@@ -86,139 +71,95 @@
         </nav>
     </header>
 
-    <div id='hero'>
+    <div id='port'>
         <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
         <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
         <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
-        <div class='layer-3 layer' data-depth='1.00' data-type='parallax'>
-            <!-- <div class='text-header layer' data-depth='0.01' data-type='parallax'>aaaaaaa
-            </div> -->
-        </div>
+        <div class='layer-3 layer' data-depth='1.00' data-type='parallax'></div>
         <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
         <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
     </div>
-    <div id='hero-mobile'></div>
+    <div id='port-mobile'></div>
     <br>
     <div id='content'>
         <br>
-            <div id="top" class="container marketing">
+        <div id="top" class="container marketing">
 
-                    <!-- Three columns of text below the carousel -->
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img class="rounded-circle" src="img/open-position-frontend-developer-dribbble-2-preview.png" alt="Generic placeholder image"
-                                width="140" height="140">
-                            <h2>Front-End</h2>
-                            <p>Conhecimento em JS, JQuery, HTML e CSS</p>
-                            <p>
-                                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-                            </p>
-                        </div>
-                        <!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
-                                width="140" height="140">
-                            <h2>Heading</h2>
-                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                                condimentum nibh.</p>
-                            <p>
-                                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-                            </p>
-                        </div>
-                        <!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
-                                width="140" height="140">
-                            <h2>Heading</h2>
-                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                                ut fermentum massa justo sit amet risus.</p>
-                            <p>
-                                <a class="btn btn-secondary" href="#" role="button">View details &raquo;</a>
-                            </p>
-                        </div>
-                        <!-- /.col-lg-4 -->
-                    </div>
-                    <!-- /.row -->
-        
-        
-                    <!-- START THE FEATURETTES -->
-        
-                    <hr class="featurette-divider">
-        
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">First featurette heading.
-                                <span class="text-muted">It'll blow your mind.</span>
-                            </h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                                commodo.
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        </div>
-                    </div>
-        
-                    <hr class="featurette-divider">
-        
-                    <div class="row featurette">
-                        <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">Oh yeah, it's that good.
-                                <span class="text-muted">See for yourself.</span>
-                            </h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                                commodo.
-                            </p>
-                        </div>
-                        <div class="col-md-5 order-md-1">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        </div>
-                    </div>
-        
-                    <hr class="featurette-divider">
-        
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">And lastly, this one.
-                                <span class="text-muted">Checkmate.</span>
-                            </h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                                commodo.
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        </div>
-                    </div>
-        
-                    <hr class="featurette-divider">
-        
-                    <!-- /END THE FEATURETTES -->
-        
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="img/open-position-frontend-developer-dribbble-2-preview.png" alt="Imagem representando o front-end"
+                        width="140" height="140">
+                    <h2>Front-End</h2>
+                    <p>Conhecimento em JS, JQuery, HTML e CSS usando FrameWorks como Bootstrap e Ember</p>
+                    
                 </div>
-                <!-- /.container -->
-        
-        
-                <!-- FOOTER -->
-                <footer class="container">
-                    <p class="float-right">
-                        <a href="#">Back to top</a>
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="img/backend.jpg" alt="Imagem representando o back-end" width="140" height="140">
+                    <h2>Back-End</h2>
+                    <p>Conhecimento em Java, Python, nodeJS, PHP, MuleESB, com experiência em SOA, REST/SOAP APIs</p>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="img/uiux.jpg" alt="Imagem representando a UX/UI" width="140" height="140">
+                    <h2>UX/UI</h2>
+                    <p>Conhecimento em design, prototipagem, usando ferramentas como Invision, Illustrator, Photoshop, Adobe
+                        Xd, entrevistas com usuário e levantamento de problemas para criar soluções inteligentes </p>
+                
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7" id="quemsoueu">
+                    <h2 class="featurette-heading">Quem eu sou?
+                        <span class="text-muted">Nada além de um desenvolvedor.</span>
+                    </h2>
+                    <p class="lead">Tenho 20 anos, sou aluno da Anhembi Morumbi no curso de Ciência da Computação, e trabalho na área já
+                        há uns meses. Sempre fui devoto área de TI, apaixonado por Engenharia de Software e claro, um ótimo
+                        jogador.
                     </p>
-                    <p>&copy; 2017-2018 Company, Inc. &middot;
-                        <a href="#">Privacy</a> &middot;
-                        <a href="#">Terms</a>
+                </div>
+                <div class="col-md-5">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2" id="objetivos">
+                    <h2 class="featurette-heading">Objetivos?
+                        <span class="text-muted">Claro que possuo.</span>
+                    </h2>
+                    <p class="lead">Minha meta é crescer profissionalmente, constantemente, fazer a diferença dentro da empresa e ser referência
+                        na mesma.
                     </p>
-                </footer>
-            </main>
-        
+                </div>
+                <div class="col-md-5 order-md-1">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7" id="linkedin">
+                    <h2 class="featurette-heading">Conecte-se comigo no LinkedIn!
+                        <span class="text-muted">É de graça.</span>
+                    </h2>
+                    <div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="pt_BR" data-type="vertical" data-theme="light" data-vanity="matheuslopespro"><a class="LI-simple-link" href='https://br.linkedin.com/in/matheuslopespro?trk=profile-badge'>Matheus Lopes</a></div>
+                </div>
+                <div class="col-md-5">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <footer class="container">
+            <p class="float-right">
+                <a href="#port">Back to top</a>
+            </p>
+            <p>&copy; 2018 Matheus Lopes. &middot;
+            </p>
+        </footer>
+        </main>
     </div>
-
-
 </body>
 
 </html>

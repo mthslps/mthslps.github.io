@@ -6,13 +6,14 @@ body {
   color: #fff;
 }
 
-#hero {
+#port {
   height: 800px;
   overflow: hidden;
   position: relative;
 }
 
 #content {
+  padding:3%;
   background-color: #130d0a;
 }
 
@@ -28,10 +29,11 @@ body {
   z-index: -1;
 }
 
-#hero-mobile {
+#port-mobile {
   display: none;
-  background: url("full_illustration.png") no-repeat center bottom/cover;
-  height: 320px;
+  background: url("../img/full_illustration.svg") no-repeat center bottom/cover;
+  height: 500px;
+  margin-bottom: -8%;
 }
 
 .first-section {
@@ -61,7 +63,7 @@ p {
   line-height: 150%;
 }
 
-#hero, .layer {
+#port, .layer {
   min-height: 800px;
 }
 
@@ -102,11 +104,11 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  #hero {
+  #port {
     display: none;
   }
 
-  #hero-mobile {
+  #port-mobile {
     display: block;
   }
 }
